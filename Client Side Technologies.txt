@@ -1,1 +1,35 @@
+
+Github from Visual Studio Code
+==============================
+git --help  ==> for help information
+git init  ==> create a folder
+git add .  ==> add the files to the folder
+git status  ==> will show whats in the folder or what needs to be doun
+git commit -m "Initial Commit"  ==> will create a commit with a name "Initial Commit"
+git remote add origin https://github.com/Albert1981A/newHttp.git  ==> needs to create a repository in github and resive the URL than add it to the git remote
+git push -u origin master  ==> push the project to github
+
 Client Side Technologies - HTML
+===============================
+<!-- COMMENT -->
+<!DOCTYPE html> - define the document to be html5
+<html><html/> - opening and closing a html document
+<head><head/> - the header of the html document, the place to define the doc and put metadata
+<body><body/> - build what will be shown on the browser
+<title><title/> - Write and content for in the title tab above the browser
+<h1><h1/> - the bigest headline
+<h2><h2/> - smaler headline
+<h3><h3/> - smaler headline...
+<p><p/> - paragraph
+<body bgcolor="orange"> - setting color to the background
+<body style="background-color: rgb(151, 188, 190);"> - secomd way of setting color to the background
+<br> - breek line and go down
+<hr color="red"> - horizonta line with color red
+
+Looks the same but every element have a different purpose:
+==========================================================
+    <p>Alita</p> - paragraph
+    <div>Alita</div> - divides the page to divisions
+    <span>Alita</span> - works on a specific write within a write (<p>Battle <span>Angel</span> Alita<p/>)
+    <element>Alita</element> - Can be an thing (<Albert>Alita<Albert/>)
+    <a>Alita</a>
