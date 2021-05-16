@@ -1,0 +1,10 @@
+http://couponsystem02.com/admin/coupon?
+companyID=1&
+category=mouse&
+title=mousy&
+description=The+Mouse+world&
+price=50&
+amount=1&
+startDate=2021-05-16&
+endDate=2021-05-20&
+image=toBinary.png
