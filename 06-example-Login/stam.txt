@@ -1,0 +1,4 @@
+http://localhost:8080/welcome?
+email=albert%40gmail.com&
+password=1234&
+type=CUSTOMER

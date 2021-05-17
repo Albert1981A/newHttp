@@ -1,0 +1,20 @@
+p{
+    font-size: 30px;
+}
+
+/* refers to an id */
+/* #p1{
+    border: 5px dotted blue;
+} */
+
+.bad{
+    border: 6px dotted red;
+}
+
+.good{
+    border: 6px dashed green;
+}
+
+.ok{
+    border: 6px dashed blue;
+}
