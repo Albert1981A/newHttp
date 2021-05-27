@@ -1,0 +1,160 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+    font-weight: 700;
+}
+
+.header {
+    margin-left: 30px;
+}
+
+.wrapper {
+    height: 450px;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+.box {
+    height: 80px;
+    width: 80px;
+    background-color: lightblue;
+    margin: 30px;
+}
+
+.box-2 {
+    height: 60px;
+    width: 60px;
+    background-color: lightblue;
+    margin: 30px;
+}
+
+.box-3 {
+    height: 40px;
+    width: 40px;
+    background-color: lightblue;
+    margin: 30px;
+}
+
+/* Horizontal Row */
+.wrapper-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Vertical Row */
+.wrapper-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Horizontal and Vertical Row */
+.wrapper-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Horizontal Column */
+.wrapper-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Vertical Column */
+.wrapper-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Horizontal and Vertical Column */
+.wrapper-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Vertical row align self */
+.wrapper-7 {
+    display: flex;
+}
+
+.wrapper-7 div {
+    align-self: center;
+}
+
+/* Horizontal column align self */
+.wrapper-8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-8 div {
+    align-self: center;
+}
+
+/* Horizontal reverse row */
+.wrapper-9 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+/* Vertical reverse row */
+.wrapper-10 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* Horizontal reverse column */
+.wrapper-11 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/* Vertical reverse column */
+.wrapper-12 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+/* Nested example 1 */
+.wrapper-13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container-13 {
+    display: flex;
+    align-items: center;
+    background-color: lightslategrey;
+}
+
+/* Nested example 2 */
+.wrapper-14 {
+    display: flex;
+    align-items: center;
+}
+
+.inner-container-14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightslategrey;
+}
