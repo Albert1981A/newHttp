@@ -1,0 +1,19 @@
+html, body {
+    text-align: center;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    background-color: lightblue;
+}
+
+hr {
+    background-color: black;
+    width: 700px;
+    height: 2px;
+}
+
+p {
+    color: slateblue;
+    font-size: 22px;
+}

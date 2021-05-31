@@ -9,6 +9,19 @@ git commit -m "Initial Commit"  ==> will create a commit with a name "Initial Co
 git remote add origin https://github.com/Albert1981A/newHttp.git  ==> needs to create a repository in github and resive the URL than add it to the git remote
 git push -u origin master  ==> push the project to github
 
+cmd
+===
+ls - create a list of what is in the folder.
+cd '11-example'  ==>  enter folder "11-example".
+cd..  ==> exit one folder back.
+
+package manager
+===============
+.net  =======================>  Nuget
+python  =====================>  PIP
+java  =======================>  maven/gradle
+React/Angular/Vue/Node.js  ==>  npm (node package manager)
+
 Client Side Technologies - HTML
 ===============================
 <!-- COMMENT -->
