@@ -1,0 +1,27 @@
+
+.images {
+    height: 200px;
+    margin: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+.conter1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    text-align: center;
+}
