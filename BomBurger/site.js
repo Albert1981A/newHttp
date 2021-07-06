@@ -2,19 +2,58 @@ var countCheese = 1;
 var burgerId = null;
 
 function addCheese() {
-    const cheeseDiv = document.getElementById("Cheese");  // document=DOM ==> DOM.. find me "Cheese"
-    const node1 = document.createElement("div");  // create <div></div>
-    node1.id = "cheese" + (countCheese++);  // define "div" with id ==> <div id="cheese1"></div>
-    node1.className = "Cheese"; // define "div" with className ==> <div class="Cheese"></div>
-    const img1 = document.createElement("img"); // create <img>
-    img1.src = "images/Burger-5.png"; // define "img" src ==> src="images/Burger-5.png" 
-    img1.alt = "Burger-5"; // define "img" alt ==> alt="Burger-5" 
-    node1.appendChild(img1);  // enter the image to the div ==> <div id="cheese1" class="Cheese"> <img src="images/Burger-5.png" alt="Burger-5"> </div>
-    cheeseDiv.appendChild(node1);  // execute the code
+    if (burgerId === null && countMeat > 1) {
+        const meatDiv = document.getElementById("Meat");  // document=DOM ==> DOM.. find me "Meat"
+        const node5 = document.createElement("div");  // create <div></div>
+        node5.id = "meat" + (countMeat++);  // define "div" with id ==> <div id="meat1"></div>
+        node5.className = "Meat"; // define "div" with className ==> <div class="Meat"></div>
+        const img5 = document.createElement("img"); // create <img>
+        img5.src = "images/Burger-6.png"; // define "img" src ==> src="images/Burger-6.png" 
+        img5.alt = "Burger-6"; // define "img" alt ==> alt="Burger-6" 
+        node5.appendChild(img5);  // enter the image to the div ==> <div id="meat1" class="Meat"> <img src="images/Burger-6.png" alt="Burger-6"> </div>
+        meatDiv.appendChild(node5);  // execute the code
+
+        const node6 = document.createElement("div");  // create <div></div>
+        burgerId = "meat1";
+        node6.id = burgerId;  // define "div" with id ==> <div id="meat1"></div>
+        node6.className = "Meat"; // define "div" with className ==> <div class="Meat"></div>
+        const img6 = document.createElement("img"); // create <img>
+        img6.src = "images/Burger-7.png"; // define "img" src ==> src="images/Burger-7.png" 
+        img6.alt = "Burger-7"; // define "img" alt ==> alt="Burger-7" 
+        node6.appendChild(img6);  // enter the image to the div ==> <div id="meat1" class="Meat"> <img src="images/Burger-7.png" alt="Burger-7"> </div>
+        // meetDiv.appendChild(node5);
+        const toChange = document.getElementById("meat1");
+        meatDiv.replaceChild(node6, toChange);
+
+    } else {
+        const cheeseDiv = document.getElementById("Cheese");  // document=DOM ==> DOM.. find me "Cheese"
+        const node1 = document.createElement("div");  // create <div></div>
+        node1.id = "cheese" + (countCheese++);  // define "div" with id ==> <div id="cheese1"></div>
+        node1.className = "Cheese"; // define "div" with className ==> <div class="Cheese"></div>
+        const img1 = document.createElement("img"); // create <img>
+        img1.src = "images/Burger-5.png"; // define "img" src ==> src="images/Burger-5.png" 
+        img1.alt = "Burger-5"; // define "img" alt ==> alt="Burger-5" 
+        node1.appendChild(img1);  // enter the image to the div ==> <div id="cheese1" class="Cheese"> <img src="images/Burger-5.png" alt="Burger-5"> </div>
+        cheeseDiv.appendChild(node1);  // execute the code
+    }
 }
 
 function removeCheese() {
-    if (countCheese <= 1) {
+    if (burgerId && countCheese <= 1) {
+        const meatDiv2 = document.getElementById("Meat");  // document=DOM ==> DOM... find me "Meat"
+        const divToRemove5 = document.getElementById(burgerId);  // DOM... find the id that needs to be deleted
+        meatDiv2.removeChild(divToRemove5); // delete the id from the container
+        burgerId = null;
+
+        const node5 = document.createElement("div");  // create <div></div>
+        node5.id = "meat1";  // define "div" with id ==> <div id="meat1"></div>
+        node5.className = "Meat"; // define "div" with className ==> <div class="Meat"></div>
+        const img5 = document.createElement("img"); // create <img>
+        img5.src = "images/Burger-6.png"; // define "img" src ==> src="images/Burger-6.png" 
+        img5.alt = "Burger-6"; // define "img" alt ==> alt="Burger-6" 
+        node5.appendChild(img5);  // enter the image to the div ==> <div id="meat1" class="Meat"> <img src="images/Burger-6.png" alt="Burger-6"> </div>
+        meatDiv2.appendChild(node5);  // execute the code
+    } else if (countCheese <= 1) {
         return null;
     } else {
         const cheeseDiv = document.getElementById("Cheese");  // document=DOM ==> DOM... find me "Cheese"
