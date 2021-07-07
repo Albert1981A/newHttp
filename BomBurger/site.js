@@ -4,15 +4,6 @@ var burgerId = null;
 function addCheese() {
     if (burgerId === null && countMeat > 1) {
         const meatDiv = document.getElementById("Meat");  // document=DOM ==> DOM.. find me "Meat"
-        const node5 = document.createElement("div");  // create <div></div>
-        node5.id = "meat" + (countMeat++);  // define "div" with id ==> <div id="meat1"></div>
-        node5.className = "Meat"; // define "div" with className ==> <div class="Meat"></div>
-        const img5 = document.createElement("img"); // create <img>
-        img5.src = "images/Burger-6.png"; // define "img" src ==> src="images/Burger-6.png" 
-        img5.alt = "Burger-6"; // define "img" alt ==> alt="Burger-6" 
-        node5.appendChild(img5);  // enter the image to the div ==> <div id="meat1" class="Meat"> <img src="images/Burger-6.png" alt="Burger-6"> </div>
-        meatDiv.appendChild(node5);  // execute the code
-
         const node6 = document.createElement("div");  // create <div></div>
         burgerId = "meat1";
         node6.id = burgerId;  // define "div" with id ==> <div id="meat1"></div>
@@ -42,9 +33,7 @@ function removeCheese() {
     if (burgerId && countCheese <= 1) {
         const meatDiv2 = document.getElementById("Meat");  // document=DOM ==> DOM... find me "Meat"
         const divToRemove5 = document.getElementById(burgerId);  // DOM... find the id that needs to be deleted
-        meatDiv2.removeChild(divToRemove5); // delete the id from the container
         burgerId = null;
-
         const node5 = document.createElement("div");  // create <div></div>
         node5.id = "meat1";  // define "div" with id ==> <div id="meat1"></div>
         node5.className = "Meat"; // define "div" with className ==> <div class="Meat"></div>
@@ -52,7 +41,7 @@ function removeCheese() {
         img5.src = "images/Burger-6.png"; // define "img" src ==> src="images/Burger-6.png" 
         img5.alt = "Burger-6"; // define "img" alt ==> alt="Burger-6" 
         node5.appendChild(img5);  // enter the image to the div ==> <div id="meat1" class="Meat"> <img src="images/Burger-6.png" alt="Burger-6"> </div>
-        meatDiv2.appendChild(node5);  // execute the code
+        meatDiv2.replaceChild(node5, divToRemove5);
     } else if (countCheese <= 1) {
         return null;
     } else {
